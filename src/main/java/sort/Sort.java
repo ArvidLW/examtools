@@ -40,9 +40,9 @@ public class Sort {
             return;
         }
         //传入arr,beg,end，这样beg、end以形参方式进入oneSort，并不会改变quickSort中的beg和end值
-        int  basepos=oneSort(arr,beg,end);
-        quickSort(arr,beg,basepos-1);
-        quickSort(arr,basepos+1,end);
+        int  mid=oneSort(arr,beg,end);
+        quickSort(arr,beg,mid-1);
+        quickSort(arr,mid+1,end);
     }
     /**冒泡排序，升序
      * 从左往右扫描发现左边值大于右边值则交换，重复扫描，直到没有交换为止。
