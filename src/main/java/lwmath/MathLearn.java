@@ -24,6 +24,18 @@ public class MathLearn {
      * 对于y=x^2-n即为x=x0-(x0^2-n)/(2*x0)=x0/2 + n/(2*x0)=(x0+n/x0)/2
      * 求一元n次函数也是一样的
      */
+    /**
+     * 补充说明：
+     * 对于给定数求开方，转化为函数求根。
+     * 例 x^2=n;
+     * 表达式：f(x)=x^2-n;    ....1
+     * 画出函数图像
+     * 找一点(x0,y0)得到其切线函数：f(x)-f(x0)=f'(x0)(x-x0)
+     * 切线与x轴交点x=x0-f(x0)/f'(x0)
+     * 求得的x1带入原方程 1中，重复上面两步，直到其x1^2-n=0在一个误差范围为止。
+     * @param n
+     * @return
+     */
     public double getRoot(double n){
         double k=n/2;
         while (Math.abs(k*k-n)>1e-9){

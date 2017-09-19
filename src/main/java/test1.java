@@ -15,13 +15,17 @@ public class test1 {
 //        System.out.println(Arrays.toString(s));
 //        String s="0100";
 //        System.out.println(Integer.valueOf(s));
-        Node[] link=new Node[3];
-        System.out.println(link[0].left);
+//        Node[] link=new Node[3];
+//        System.out.println(link[0].left);
+
+        int[] a=new int[]{1,2,3};
+        int[] b=Arrays.copyOf(a,a.length);
+        System.out.println(Arrays.toString(b));
     }
 
-    public static void change(StringBuilder x) {
-        x.delete(0, 2).append("cd");
-    }
+//    public static void change(StringBuilder x) {
+//        x.delete(0, 2).append("cd");
+//    }
 }
 class Node{
     int left=0;
